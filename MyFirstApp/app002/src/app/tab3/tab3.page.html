@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab3
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+  <ion-item *ngFor="let video of video">
+    <ion-card>
+    <ion-card-content>
+      
+      
+      <ion-text>{{video.snippet.title}}</ion-text>
+      <hr class="line"/>
+    </ion-card-content>
+    
+  </ion-card>
+  
+  </ion-item>
+  
+  </ion-list>
+</ion-content>
